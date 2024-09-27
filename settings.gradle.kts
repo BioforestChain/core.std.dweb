@@ -68,7 +68,7 @@ class FeaturesFactory {
         val disabled = !enabled
     }
 
-    val androidApp = Bool(!disabled.contains("android"));
+    val androidApp = Bool(!disabled.contains("android"))
     val iosApp = Bool(platform.isMac && !disabled.contains("ios"));
     val desktopApp = Bool(!disabled.contains("desktop"));
     val extlibs = Bool(androidApp.enabled || iosApp.enabled || desktopApp.enabled)
@@ -88,23 +88,14 @@ rootProject.name = "subsoil"
 /**
  * 导入依赖
  */
-if (features.extlibs.enabled) {
-    include(":core")
-//    include(":helper")
-//    include(":helperCompose")
-//    include(":helperPlatform")
-//
-//    include(":pureHttp")
-//    include(":pureIO")
-//    include(":pureCrypto")
-//    include(":pureImage")
-//
-//    include(":window")
-//    include(":dwebview")
-//    include(":sys")
-    include(":shared")
-}
+File(rootDir, "./modules").listFiles { file -> file.isDirectory }
+    ?.forEach { dir ->
+        if (File(dir, "module.yaml").exists()) {
+            include(":modules/${dir.name}")
+        }
+    }
 
+/**导入app*/
 fun includeApp(dirName: String) {
     include(dirName)
     project(":$dirName").projectDir = file("app/$dirName")
@@ -114,3 +105,25 @@ fun includeApp(dirName: String) {
  * 导入app
  */
 includeApp("androidApp")
+includeApp("iosApp")
+
+if (features.extlibs.enabled) {
+    File(
+        rootDir,
+        "/Volumes/developer/waterbang/deno/dweb_browser/toolkit/dweb_browser_libs/rust_library"
+    ).listFiles { file -> file.isDirectory }
+        ?.forEach { dir ->
+            if (File(dir, "build.gradle.kts").exists()) {
+                if (dir.name == "biometrics" && features.desktopApp.disabled) {
+                    return@forEach
+                }
+                include(dir.name)
+                project(":${dir.name}").apply {
+                    name = "lib_${dir.name}"
+                    projectDir = file(dir)
+                    buildFileName = "build-mobile.gradle.kts"
+                }
+            }
+        }
+}
+

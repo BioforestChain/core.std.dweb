@@ -1,0 +1,14 @@
+product: android/app
+
+dependencies:
+    - ../../modules/shared
+
+settings:
+    compose: enabled
+    android:
+        applicationId: com.dweb.subsoil.android
+        maxSdk: 24
+        targetSdk: 34
+        compileSdk: 34
+
+

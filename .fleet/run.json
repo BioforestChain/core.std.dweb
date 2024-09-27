@@ -1,0 +1,9 @@
+{
+    "configurations": [
+        {
+            "type": "kmp-app",
+            "name": "Kmp-app configuration",
+            "module": "",
+        },
+    ]
+}

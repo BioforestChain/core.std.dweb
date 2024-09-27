@@ -1,8 +1,14 @@
 plugins {
+
   id("com.android.application")
   kotlin("plugin.compose")
   id("org.jetbrains.compose")
   kotlin("multiplatform")
+}
+
+repositories {
+  mavenCentral()
+  google()
 }
 
 kotlin {
@@ -47,14 +53,8 @@ android {
       excludes += "/META-INF/{AL2.0,LGPL2.1}"
     }
   }
-  buildTypes {
-    getByName("release") {
-      isMinifyEnabled = false // 开启代码混淆
-      isShrinkResources = true // 移除无用资源
-    }
-  }
   compileOptions {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
   }
 }
