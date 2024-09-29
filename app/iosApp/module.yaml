@@ -3,7 +3,7 @@ product: ios/app
 dependencies:
     - $compose.foundation
     - $compose.material3
-    - ../../shared
+    - ../../modules/shared
 
 settings:
     compose: enabled

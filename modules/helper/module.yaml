@@ -7,6 +7,6 @@ dependencies:
     - $libs.ktor.http
     - $libs.ktor.io
     - $libs.squareup.okio
+    - ../../../../deno/dweb_browser/toolkit/dweb_browser_libs/rust_library/mix_compression
 
 
-settings:
