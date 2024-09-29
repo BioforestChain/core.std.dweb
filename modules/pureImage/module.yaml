@@ -2,5 +2,29 @@ product:
     type: lib
     platforms: [iosArm64,iosSimulatorArm64,iosX64,android]
 
+apply:
+    - ../common.module-template.yaml
+    - ../android.module-template.yaml
+    - ../ios.module-template.yaml
+    - ../desktop.module-template.yaml
+
 dependencies:
-    
+    - ../helper
+    - ../helperPlatform
+    - ../helperCompose
+    - ../pureIO
+    - ../pureHttp
+    - ../../../../deno/dweb_browser/toolkit/dweb_browser_libs/rust_library/resvg_render
+# 加载图片 coil
+    - $libs.coil.core
+    - $libs.coil.compose
+    - $libs.coil.network.ktor
+    - $libs.coil.svg
+    - $libs.coil.gif
+# ext
+    - $libs.ktor.io
+    - $libs.ktor.server.websockets
+    - $libs.ktor.server.cio
+    - $libs.coil.video
+
+

@@ -1,0 +1,11 @@
+framework module DwebPlatformIosKit {
+  umbrella header "DwebPlatformIosKit.h"
+  export *
+
+  module * { export * }
+}
+
+module DwebPlatformIosKit.Swift {
+  header "DwebPlatformIosKit-Swift.h"
+  requires objc
+}

@@ -1,6 +1,21 @@
 product:
     type: lib
-    platforms: [iosArm64,iosSimulatorArm64,iosX64,android]
+    platforms: [iosArm64,iosSimulatorArm64,iosX64,android,jvm]
+
+apply:
+    - ../common.module-template.yaml
+    - ../android.module-template.yaml
+    - ../ios.module-template.yaml
+    - ../desktop.module-template.yaml
 
 dependencies:
-    
+    - $libs.whyoleg.cryptography.core
+
+dependencies@android:
+    - $libs.whyoleg.cryptography.provider.jdk
+
+dependencies@ios:
+    - $libs.whyoleg.cryptography.provider.openssl3.prebuilt
+
+dependencies@jvm:
+    - $libs.whyoleg.cryptography.provider.jdk

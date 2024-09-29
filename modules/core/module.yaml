@@ -1,6 +1,25 @@
 product:
     type: lib
-    platforms: [iosArm64,iosSimulatorArm64,iosX64,android]
+    platforms: [iosArm64,iosSimulatorArm64,iosX64,android,jvm]
+
+aliases:
+    - desktop: [jvm]
+    - mobile: [ios,android]
+
+dependencies@mobile:
+    - ../../../../deno/dweb_browser/toolkit/dweb_browser_libs/rust_library/reverse_proxy
+
 
 dependencies:
-    
+    - ../helper
+    - ../helperCompose
+    - ../helperPlatform
+    - ../pureIO
+    - ../pureCrypto
+    - ../pureHttp
+    - ../../../../deno/dweb_browser/toolkit/dweb_browser_libs/rust_library/multipart
+
+apply:
+    - ../android.module-template.yaml
+    - ../common.module-template.yaml
+    - ../desktop.module-template.yaml

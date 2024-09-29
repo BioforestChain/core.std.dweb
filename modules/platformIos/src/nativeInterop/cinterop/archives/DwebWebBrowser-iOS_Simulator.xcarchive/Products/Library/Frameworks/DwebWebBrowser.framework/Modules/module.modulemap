@@ -1,0 +1,4 @@
+framework module DwebWebBrowser {
+  header "DwebWebBrowser-Swift.h"
+  requires objc
+}

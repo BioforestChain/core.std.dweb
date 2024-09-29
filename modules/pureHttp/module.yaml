@@ -1,6 +1,31 @@
 product:
     type: lib
-    platforms: [iosArm64,iosSimulatorArm64,iosX64,android]
+    platforms: [iosArm64,iosSimulatorArm64,iosX64,android,jvm]
+
+apply:
+    - ../common.module-template.yaml
+
 
 dependencies:
-    
+    - $libs.ktor.io
+    - $libs.ktor.http
+    - $libs.ktor.client.encoding
+    - $libs.ktor.server.host.common
+    - $libs.ktor.server.core
+    - $libs.ktor.server.websockets
+    - ../helper
+    - ../helperPlatform
+
+dependencies@android:
+    - $libs.ktor.server.cio
+    - $libs.ktor.client.okhttp
+
+dependencies@ios:
+    - $libs.ktor.server.cio
+    - $libs.ktor.client.darwin
+
+dependencies@jvm:
+    - $libs.ktor.client.okhttp
+    - $libs.ktor.server.netty
+    - $libs.ktor.server.jetty
+    - $libs.ktor.network.tls.certificates

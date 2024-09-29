@@ -1,0 +1,11 @@
+framework module DwebBrowserCommon {
+  umbrella header "DwebBrowserCommon.h"
+  export *
+
+  module * { export * }
+}
+
+module DwebBrowserCommon.Swift {
+  header "DwebBrowserCommon-Swift.h"
+  requires objc
+}

@@ -1,0 +1,104 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DwebPlatformIosKit
+import AVFoundation
+import CoreData
+@_exported import DwebBrowserCommon
+@_exported import DwebPlatformIosKit
+import Foundation
+import Security
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public class DwebKeyChainGenericStore : ObjectiveC.NSObject {
+  @objc public init(service: Swift.String)
+  @objc public func saveItem(account: Swift.String, data: Foundation.Data)
+  @objc public func hasItem(account: Swift.String) -> Swift.Bool
+  @objc public func loadItem(account: Swift.String) -> Foundation.Data?
+  @objc public func deleteItem(account: Swift.String) -> Swift.Bool
+  @objc public func getAllAccounts() -> [Swift.String]
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DwebWKWebView) @_Concurrency.MainActor(unsafe) public class DwebWKWebView : WebKit.WKWebView {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var icon: Foundation.NSString
+  @objc deinit
+  @objc @_Concurrency.MainActor(unsafe) public func destroy()
+}
+
+
+@_inheritsConvenienceInitializers @objc public class SoundRecordManager : ObjectiveC.NSObject {
+  @objc public func create(multiple: Swift.Bool, limit: Swift.Int) -> UIKit.UIViewController
+  @objc public func completeRecord(callback: @escaping (Swift.String) -> Swift.Void)
+  @objc public func completeSingleRecord(callback: @escaping (Swift.String) -> Swift.Void)
+  @objc public func createRecordController() -> UIKit.UIViewController
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc open class DwebHelper : ObjectiveC.NSObject {
+  @objc open func setProxy(websiteDataStore: WebKit.WKWebsiteDataStore, host: Swift.String, port: Swift.UInt16)
+  @objc open func enableSafeAreaInsets(webView: WebKit.WKWebView, insets: UIKit.UIEdgeInsets)
+  @objc open func disableSafeAreaInsets(webView: WebKit.WKWebView)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc open class URLSchemeTaskHelper : ObjectiveC.NSObject {
+  @objc open func startURLSchemeTask(_ webView: WebKit.WKWebView, task: any WebKit.WKURLSchemeTask) -> DwebPlatformIosKit.EasyURLSchemeTask
+  @objc open func stopURLSchemeTask(_ webView: WebKit.WKWebView, task: any WebKit.WKURLSchemeTask) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc open class EasyURLSchemeTask : ObjectiveC.NSObject {
+  @objc open func didReceiveResponse(_ response: Foundation.URLResponse) -> Swift.Bool
+  @objc open func didReceiveData(_ data: Foundation.Data) -> Swift.Bool
+  @objc open func didFinish() -> Swift.Bool
+  @objc open func didFailWithError(_ error: any Swift.Error) -> Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class BgPlaceholderView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) open func setCallback(_ willMoveNewSuperview: @escaping (UIKit.UIView?) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func willMove(toSuperview newSuperview: UIKit.UIView?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc open class SecureViewController : ObjectiveC.NSObject {
+  @objc public init(vc: UIKit.UIViewController, onNewView: ((UIKit.UIView) -> Swift.Void)?)
+  @objc open func effect()
+  @objc open func dispose()
+  @objc open func setSafeMode(_ safe: Swift.Bool)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(SoundEntity) public class SoundEntity : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension DwebPlatformIosKit.SoundEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DwebPlatformIosKit.SoundEntity>
+  @objc @NSManaged dynamic public var duration: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var isSelected: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var nameString: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var path: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timeStamp: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+}
+extension DwebPlatformIosKit.SoundEntity : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}

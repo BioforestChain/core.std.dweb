@@ -2,5 +2,14 @@ product:
     type: lib
     platforms: [iosArm64,iosSimulatorArm64,iosX64,android]
 
+
+apply:
+    - ../common.module-template.yaml
+    - ../android.module-template.yaml
+    - ../ios.module-template.yaml
+    - ../desktop.module-template.yaml
+
 dependencies:
-    
+    - $libs.squareup.okio
+    - $libs.squareup.okio.fakefilesystem
+    - ../helper

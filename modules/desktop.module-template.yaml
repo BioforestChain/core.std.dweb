@@ -1,0 +1,8 @@
+dependencies:
+    - $libs.androidx.core.ktx
+    - $libs.androidx.annotation
+    - $libs.kotlinx.coroutines.swing
+
+settings:
+    jvm:
+        release: 17

@@ -1,0 +1,15 @@
+
+dependencies:
+    - $libs.androidx.core.ktx
+    - $libs.androidx.annotation
+
+settings:
+    compose: enabled
+    android:
+        namespace: com.dweb.subsoil.android
+        applicationId: com.dweb.subsoil.android
+        minSdk: 24
+        targetSdk: 34
+        compileSdk: 34
+    jvm:
+        release: 17

@@ -1,0 +1,3184 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DwebKeyChainGenericStore",
+        "printedName": "DwebKeyChainGenericStore",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(service:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DwebKeyChainGenericStore",
+                "printedName": "DwebPlatformIosKit.DwebKeyChainGenericStore",
+                "usr": "c:@M@DwebPlatformIosKit@objc(cs)DwebKeyChainGenericStore"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)DwebKeyChainGenericStore(im)initWithService:",
+            "mangledName": "$s18DwebPlatformIosKit0A20KeyChainGenericStoreC7serviceACSS_tcfc",
+            "moduleName": "DwebPlatformIosKit",
+            "objc_name": "initWithService:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "saveItem",
+            "printedName": "saveItem(account:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)DwebKeyChainGenericStore(im)saveItemWithAccount:data:",
+            "mangledName": "$s18DwebPlatformIosKit0A20KeyChainGenericStoreC8saveItem7account4dataySS_10Foundation4DataVtF",
+            "moduleName": "DwebPlatformIosKit",
+            "objc_name": "saveItemWithAccount:data:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hasItem",
+            "printedName": "hasItem(account:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)DwebKeyChainGenericStore(im)hasItemWithAccount:",
+            "mangledName": "$s18DwebPlatformIosKit0A20KeyChainGenericStoreC7hasItem7accountSbSS_tF",
+            "moduleName": "DwebPlatformIosKit",
+            "objc_name": "hasItemWithAccount:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadItem",
+            "printedName": "loadItem(account:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)DwebKeyChainGenericStore(im)loadItemWithAccount:",
+            "mangledName": "$s18DwebPlatformIosKit0A20KeyChainGenericStoreC8loadItem7account10Foundation4DataVSgSS_tF",
+            "moduleName": "DwebPlatformIosKit",
+            "objc_name": "loadItemWithAccount:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteItem",
+            "printedName": "deleteItem(account:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)DwebKeyChainGenericStore(im)deleteItemWithAccount:",
+            "mangledName": "$s18DwebPlatformIosKit0A20KeyChainGenericStoreC10deleteItem7accountSbSS_tF",
+            "moduleName": "DwebPlatformIosKit",
+            "objc_name": "deleteItemWithAccount:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAllAccounts",
+            "printedName": "getAllAccounts()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)DwebKeyChainGenericStore(im)getAllAccounts",
+            "mangledName": "$s18DwebPlatformIosKit0A20KeyChainGenericStoreC14getAllAccountsSaySSGyF",
+            "moduleName": "DwebPlatformIosKit",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DwebKeyChainGenericStore",
+                "printedName": "DwebPlatformIosKit.DwebKeyChainGenericStore",
+                "usr": "c:@M@DwebPlatformIosKit@objc(cs)DwebKeyChainGenericStore"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)DwebKeyChainGenericStore(im)init",
+            "mangledName": "$s18DwebPlatformIosKit0A20KeyChainGenericStoreCACycfc",
+            "moduleName": "DwebPlatformIosKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@DwebPlatformIosKit@objc(cs)DwebKeyChainGenericStore",
+        "mangledName": "$s18DwebPlatformIosKit0A20KeyChainGenericStoreC",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DwebWKWebView",
+        "printedName": "DwebWKWebView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "icon",
+            "printedName": "icon",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSString",
+                "printedName": "Foundation.NSString",
+                "usr": "c:objc(cs)NSString"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)DwebWKWebView(py)icon",
+            "mangledName": "$s18DwebPlatformIosKit0A9WKWebViewC4iconSo8NSStringCvp",
+            "moduleName": "DwebPlatformIosKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSString",
+                    "printedName": "Foundation.NSString",
+                    "usr": "c:objc(cs)NSString"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DwebPlatformIosKit@objc(cs)DwebWKWebView(im)icon",
+                "mangledName": "$s18DwebPlatformIosKit0A9WKWebViewC4iconSo8NSStringCvg",
+                "moduleName": "DwebPlatformIosKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSString",
+                    "printedName": "Foundation.NSString",
+                    "usr": "c:objc(cs)NSString"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DwebPlatformIosKit@objc(cs)DwebWKWebView(im)setIcon:",
+                "mangledName": "$s18DwebPlatformIosKit0A9WKWebViewC4iconSo8NSStringCvs",
+                "moduleName": "DwebPlatformIosKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "destroy",
+            "printedName": "destroy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)DwebWKWebView(im)destroy",
+            "mangledName": "$s18DwebPlatformIosKit0A9WKWebViewC7destroyyyF",
+            "moduleName": "DwebPlatformIosKit",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@DwebPlatformIosKit@objc(cs)DwebWKWebView",
+        "mangledName": "$s18DwebPlatformIosKit0A9WKWebViewC",
+        "moduleName": "DwebPlatformIosKit",
+        "objc_name": "DwebWKWebView",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)WKWebView",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "WebKit.WKWebView",
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DwebBrowserCommon",
+        "printedName": "DwebBrowserCommon",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "Exported"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SoundRecordManager",
+        "printedName": "SoundRecordManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create(multiple:limit:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)SoundRecordManager(im)createWithMultiple:limit:",
+            "mangledName": "$s18DwebPlatformIosKit18SoundRecordManagerC6create8multiple5limitSo16UIViewControllerCSb_SitF",
+            "moduleName": "DwebPlatformIosKit",
+            "objc_name": "createWithMultiple:limit:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "completeRecord",
+            "printedName": "completeRecord(callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)SoundRecordManager(im)completeRecordWithCallback:",
+            "mangledName": "$s18DwebPlatformIosKit18SoundRecordManagerC08completeF08callbackyySSc_tF",
+            "moduleName": "DwebPlatformIosKit",
+            "objc_name": "completeRecordWithCallback:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "completeSingleRecord",
+            "printedName": "completeSingleRecord(callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)SoundRecordManager(im)completeSingleRecordWithCallback:",
+            "mangledName": "$s18DwebPlatformIosKit18SoundRecordManagerC014completeSingleF08callbackyySSc_tF",
+            "moduleName": "DwebPlatformIosKit",
+            "objc_name": "completeSingleRecordWithCallback:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createRecordController",
+            "printedName": "createRecordController()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)SoundRecordManager(im)createRecordController",
+            "mangledName": "$s18DwebPlatformIosKit18SoundRecordManagerC06createF10ControllerSo06UIViewI0CyF",
+            "moduleName": "DwebPlatformIosKit",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SoundRecordManager",
+                "printedName": "DwebPlatformIosKit.SoundRecordManager",
+                "usr": "c:@M@DwebPlatformIosKit@objc(cs)SoundRecordManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)SoundRecordManager(im)init",
+            "mangledName": "$s18DwebPlatformIosKit18SoundRecordManagerCACycfc",
+            "moduleName": "DwebPlatformIosKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@DwebPlatformIosKit@objc(cs)SoundRecordManager",
+        "mangledName": "$s18DwebPlatformIosKit18SoundRecordManagerC",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DwebHelper",
+        "printedName": "DwebHelper",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "setProxy",
+            "printedName": "setProxy(websiteDataStore:host:port:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebsiteDataStore",
+                "printedName": "WebKit.WKWebsiteDataStore",
+                "usr": "c:objc(cs)WKWebsiteDataStore"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt16",
+                "printedName": "Swift.UInt16",
+                "usr": "s:s6UInt16V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)DwebHelper(im)setProxyWithWebsiteDataStore:host:port:",
+            "mangledName": "$s18DwebPlatformIosKit0A6HelperC8setProxy16websiteDataStore4host4portySo09WKWebsiteiJ0C_SSs6UInt16VtF",
+            "moduleName": "DwebPlatformIosKit",
+            "isOpen": true,
+            "objc_name": "setProxyWithWebsiteDataStore:host:port:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableSafeAreaInsets",
+            "printedName": "enableSafeAreaInsets(webView:insets:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIEdgeInsets",
+                "printedName": "UIKit.UIEdgeInsets",
+                "usr": "c:@S@UIEdgeInsets"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)DwebHelper(im)enableSafeAreaInsetsWithWebView:insets:",
+            "mangledName": "$s18DwebPlatformIosKit0A6HelperC20enableSafeAreaInsets7webView6insetsySo05WKWebK0C_So06UIEdgeI0VtF",
+            "moduleName": "DwebPlatformIosKit",
+            "isOpen": true,
+            "objc_name": "enableSafeAreaInsetsWithWebView:insets:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disableSafeAreaInsets",
+            "printedName": "disableSafeAreaInsets(webView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)DwebHelper(im)disableSafeAreaInsetsWithWebView:",
+            "mangledName": "$s18DwebPlatformIosKit0A6HelperC21disableSafeAreaInsets7webViewySo05WKWebK0C_tF",
+            "moduleName": "DwebPlatformIosKit",
+            "isOpen": true,
+            "objc_name": "disableSafeAreaInsetsWithWebView:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DwebHelper",
+                "printedName": "DwebPlatformIosKit.DwebHelper",
+                "usr": "c:@M@DwebPlatformIosKit@objc(cs)DwebHelper"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)DwebHelper(im)init",
+            "mangledName": "$s18DwebPlatformIosKit0A6HelperCACycfc",
+            "moduleName": "DwebPlatformIosKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@DwebPlatformIosKit@objc(cs)DwebHelper",
+        "mangledName": "$s18DwebPlatformIosKit0A6HelperC",
+        "moduleName": "DwebPlatformIosKit",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLSchemeTaskHelper",
+        "printedName": "URLSchemeTaskHelper",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "startURLSchemeTask",
+            "printedName": "startURLSchemeTask(_:task:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EasyURLSchemeTask",
+                "printedName": "DwebPlatformIosKit.EasyURLSchemeTask",
+                "usr": "c:@M@DwebPlatformIosKit@objc(cs)EasyURLSchemeTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKURLSchemeTask",
+                "printedName": "any WebKit.WKURLSchemeTask",
+                "usr": "c:objc(pl)WKURLSchemeTask"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)URLSchemeTaskHelper(im)startURLSchemeTask:task:",
+            "mangledName": "$s18DwebPlatformIosKit19URLSchemeTaskHelperC05starteF0_4taskAA04EasyeF0CSo9WKWebViewC_So011WKURLSchemeF0_ptF",
+            "moduleName": "DwebPlatformIosKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopURLSchemeTask",
+            "printedName": "stopURLSchemeTask(_:task:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKURLSchemeTask",
+                "printedName": "any WebKit.WKURLSchemeTask",
+                "usr": "c:objc(pl)WKURLSchemeTask"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)URLSchemeTaskHelper(im)stopURLSchemeTask:task:",
+            "mangledName": "$s18DwebPlatformIosKit19URLSchemeTaskHelperC04stopeF0_4taskSbSo9WKWebViewC_So011WKURLSchemeF0_ptF",
+            "moduleName": "DwebPlatformIosKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSchemeTaskHelper",
+                "printedName": "DwebPlatformIosKit.URLSchemeTaskHelper",
+                "usr": "c:@M@DwebPlatformIosKit@objc(cs)URLSchemeTaskHelper"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)URLSchemeTaskHelper(im)init",
+            "mangledName": "$s18DwebPlatformIosKit19URLSchemeTaskHelperCACycfc",
+            "moduleName": "DwebPlatformIosKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@DwebPlatformIosKit@objc(cs)URLSchemeTaskHelper",
+        "mangledName": "$s18DwebPlatformIosKit19URLSchemeTaskHelperC",
+        "moduleName": "DwebPlatformIosKit",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EasyURLSchemeTask",
+        "printedName": "EasyURLSchemeTask",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "didReceiveResponse",
+            "printedName": "didReceiveResponse(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLResponse",
+                "printedName": "Foundation.URLResponse",
+                "usr": "c:objc(cs)NSURLResponse"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)EasyURLSchemeTask(im)didReceiveResponse:",
+            "mangledName": "$s18DwebPlatformIosKit17EasyURLSchemeTaskC18didReceiveResponseySbSo13NSURLResponseCF",
+            "moduleName": "DwebPlatformIosKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceiveData",
+            "printedName": "didReceiveData(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)EasyURLSchemeTask(im)didReceiveData:",
+            "mangledName": "$s18DwebPlatformIosKit17EasyURLSchemeTaskC14didReceiveDataySb10Foundation0J0VF",
+            "moduleName": "DwebPlatformIosKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didFinish",
+            "printedName": "didFinish()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)EasyURLSchemeTask(im)didFinish",
+            "mangledName": "$s18DwebPlatformIosKit17EasyURLSchemeTaskC9didFinishSbyF",
+            "moduleName": "DwebPlatformIosKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didFailWithError",
+            "printedName": "didFailWithError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)EasyURLSchemeTask(im)didFailWithError:",
+            "mangledName": "$s18DwebPlatformIosKit17EasyURLSchemeTaskC16didFailWithErrorySbs0K0_pF",
+            "moduleName": "DwebPlatformIosKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EasyURLSchemeTask",
+                "printedName": "DwebPlatformIosKit.EasyURLSchemeTask",
+                "usr": "c:@M@DwebPlatformIosKit@objc(cs)EasyURLSchemeTask"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)EasyURLSchemeTask(im)init",
+            "mangledName": "$s18DwebPlatformIosKit17EasyURLSchemeTaskCACycfc",
+            "moduleName": "DwebPlatformIosKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@DwebPlatformIosKit@objc(cs)EasyURLSchemeTask",
+        "mangledName": "$s18DwebPlatformIosKit17EasyURLSchemeTaskC",
+        "moduleName": "DwebPlatformIosKit",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BgPlaceholderView",
+        "printedName": "BgPlaceholderView",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "setCallback",
+            "printedName": "setCallback(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UIKit.UIView?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)BgPlaceholderView(im)setCallback:",
+            "mangledName": "$s18DwebPlatformIosKit17BgPlaceholderViewC11setCallbackyyySo6UIViewCSgcF",
+            "moduleName": "DwebPlatformIosKit",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "willMove",
+            "printedName": "willMove(toSuperview:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)BgPlaceholderView(im)willMoveToSuperview:",
+            "mangledName": "$s18DwebPlatformIosKit17BgPlaceholderViewC8willMove11toSuperviewySo6UIViewCSg_tF",
+            "moduleName": "DwebPlatformIosKit",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "willMoveToSuperview:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BgPlaceholderView",
+                "printedName": "DwebPlatformIosKit.BgPlaceholderView",
+                "usr": "c:@M@DwebPlatformIosKit@objc(cs)BgPlaceholderView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)BgPlaceholderView(im)initWithFrame:",
+            "mangledName": "$s18DwebPlatformIosKit17BgPlaceholderViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "DwebPlatformIosKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DwebPlatformIosKit.BgPlaceholderView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BgPlaceholderView",
+                    "printedName": "DwebPlatformIosKit.BgPlaceholderView",
+                    "usr": "c:@M@DwebPlatformIosKit@objc(cs)BgPlaceholderView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)BgPlaceholderView(im)initWithCoder:",
+            "mangledName": "$s18DwebPlatformIosKit17BgPlaceholderViewC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "DwebPlatformIosKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@DwebPlatformIosKit@objc(cs)BgPlaceholderView",
+        "mangledName": "$s18DwebPlatformIosKit17BgPlaceholderViewC",
+        "moduleName": "DwebPlatformIosKit",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SecureViewController",
+        "printedName": "SecureViewController",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(vc:onNewView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SecureViewController",
+                "printedName": "DwebPlatformIosKit.SecureViewController",
+                "usr": "c:@M@DwebPlatformIosKit@objc(cs)SecureViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UIKit.UIView) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UIKit.UIView) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)SecureViewController(im)initWithVc:onNewView:",
+            "mangledName": "$s18DwebPlatformIosKit20SecureViewControllerC2vc05onNewF0ACSo06UIViewG0C_ySo0K0CcSgtcfc",
+            "moduleName": "DwebPlatformIosKit",
+            "objc_name": "initWithVc:onNewView:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "effect",
+            "printedName": "effect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)SecureViewController(im)effect",
+            "mangledName": "$s18DwebPlatformIosKit20SecureViewControllerC6effectyyF",
+            "moduleName": "DwebPlatformIosKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dispose",
+            "printedName": "dispose()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)SecureViewController(im)dispose",
+            "mangledName": "$s18DwebPlatformIosKit20SecureViewControllerC7disposeyyF",
+            "moduleName": "DwebPlatformIosKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setSafeMode",
+            "printedName": "setSafeMode(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)SecureViewController(im)setSafeMode:",
+            "mangledName": "$s18DwebPlatformIosKit20SecureViewControllerC11setSafeModeyySbF",
+            "moduleName": "DwebPlatformIosKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SecureViewController",
+                "printedName": "DwebPlatformIosKit.SecureViewController",
+                "usr": "c:@M@DwebPlatformIosKit@objc(cs)SecureViewController"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)SecureViewController(im)init",
+            "mangledName": "$s18DwebPlatformIosKit20SecureViewControllerCACycfc",
+            "moduleName": "DwebPlatformIosKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@DwebPlatformIosKit@objc(cs)SecureViewController",
+        "mangledName": "$s18DwebPlatformIosKit20SecureViewControllerC",
+        "moduleName": "DwebPlatformIosKit",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SoundEntity",
+        "printedName": "SoundEntity",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(entity:insertInto:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SoundEntity",
+                "printedName": "DwebPlatformIosKit.SoundEntity",
+                "usr": "c:@M@DwebPlatformIosKit@objc(cs)SoundEntity"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSEntityDescription",
+                "printedName": "CoreData.NSEntityDescription",
+                "usr": "c:objc(cs)NSEntityDescription"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreData.NSManagedObjectContext?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSManagedObjectContext",
+                    "printedName": "CoreData.NSManagedObjectContext",
+                    "usr": "c:objc(cs)NSManagedObjectContext"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@DwebPlatformIosKit@objc(cs)SoundEntity(im)initWithEntity:insertIntoManagedObjectContext:",
+            "mangledName": "$s18DwebPlatformIosKit11SoundEntityC6entity10insertIntoACSo19NSEntityDescriptionC_So22NSManagedObjectContextCSgtcfc",
+            "moduleName": "DwebPlatformIosKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithEntity:insertIntoManagedObjectContext:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchRequest",
+            "printedName": "fetchRequest()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSFetchRequest",
+                "printedName": "CoreData.NSFetchRequest<DwebPlatformIosKit.SoundEntity>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SoundEntity",
+                    "printedName": "DwebPlatformIosKit.SoundEntity",
+                    "usr": "c:@M@DwebPlatformIosKit@objc(cs)SoundEntity"
+                  }
+                ],
+                "usr": "c:objc(cs)NSFetchRequest"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18DwebPlatformIosKit11SoundEntityC12fetchRequestSo07NSFetchH0CyACGyFZ",
+            "mangledName": "$s18DwebPlatformIosKit11SoundEntityC12fetchRequestSo07NSFetchH0CyACGyFZ",
+            "moduleName": "DwebPlatformIosKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "NonObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "duration",
+            "printedName": "duration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@DwebPlatformIosKit@objc(cs)SoundEntity(py)duration",
+            "mangledName": "$s18DwebPlatformIosKit11SoundEntityC8durations5Int64Vvp",
+            "moduleName": "DwebPlatformIosKit",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DwebPlatformIosKit@objc(cs)SoundEntity(im)duration",
+                "mangledName": "$s18DwebPlatformIosKit11SoundEntityC8durations5Int64Vvg",
+                "moduleName": "DwebPlatformIosKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DwebPlatformIosKit@objc(cs)SoundEntity(im)setDuration:",
+                "mangledName": "$s18DwebPlatformIosKit11SoundEntityC8durations5Int64Vvs",
+                "moduleName": "DwebPlatformIosKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isSelected",
+            "printedName": "isSelected",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@DwebPlatformIosKit@objc(cs)SoundEntity(py)isSelected",
+            "mangledName": "$s18DwebPlatformIosKit11SoundEntityC10isSelectedSbvp",
+            "moduleName": "DwebPlatformIosKit",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DwebPlatformIosKit@objc(cs)SoundEntity(im)isSelected",
+                "mangledName": "$s18DwebPlatformIosKit11SoundEntityC10isSelectedSbvg",
+                "moduleName": "DwebPlatformIosKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DwebPlatformIosKit@objc(cs)SoundEntity(im)setIsSelected:",
+                "mangledName": "$s18DwebPlatformIosKit11SoundEntityC10isSelectedSbvs",
+                "moduleName": "DwebPlatformIosKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "nameString",
+            "printedName": "nameString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@DwebPlatformIosKit@objc(cs)SoundEntity(py)nameString",
+            "mangledName": "$s18DwebPlatformIosKit11SoundEntityC10nameStringSSSgvp",
+            "moduleName": "DwebPlatformIosKit",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DwebPlatformIosKit@objc(cs)SoundEntity(im)nameString",
+                "mangledName": "$s18DwebPlatformIosKit11SoundEntityC10nameStringSSSgvg",
+                "moduleName": "DwebPlatformIosKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DwebPlatformIosKit@objc(cs)SoundEntity(im)setNameString:",
+                "mangledName": "$s18DwebPlatformIosKit11SoundEntityC10nameStringSSSgvs",
+                "moduleName": "DwebPlatformIosKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "path",
+            "printedName": "path",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@DwebPlatformIosKit@objc(cs)SoundEntity(py)path",
+            "mangledName": "$s18DwebPlatformIosKit11SoundEntityC4pathSSSgvp",
+            "moduleName": "DwebPlatformIosKit",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DwebPlatformIosKit@objc(cs)SoundEntity(im)path",
+                "mangledName": "$s18DwebPlatformIosKit11SoundEntityC4pathSSSgvg",
+                "moduleName": "DwebPlatformIosKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DwebPlatformIosKit@objc(cs)SoundEntity(im)setPath:",
+                "mangledName": "$s18DwebPlatformIosKit11SoundEntityC4pathSSSgvs",
+                "moduleName": "DwebPlatformIosKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeStamp",
+            "printedName": "timeStamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@DwebPlatformIosKit@objc(cs)SoundEntity(py)timeStamp",
+            "mangledName": "$s18DwebPlatformIosKit11SoundEntityC9timeStamps5Int64Vvp",
+            "moduleName": "DwebPlatformIosKit",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DwebPlatformIosKit@objc(cs)SoundEntity(im)timeStamp",
+                "mangledName": "$s18DwebPlatformIosKit11SoundEntityC9timeStamps5Int64Vvg",
+                "moduleName": "DwebPlatformIosKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DwebPlatformIosKit@objc(cs)SoundEntity(im)setTimeStamp:",
+                "mangledName": "$s18DwebPlatformIosKit11SoundEntityC9timeStamps5Int64Vvs",
+                "moduleName": "DwebPlatformIosKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@DwebPlatformIosKit@objc(cs)SoundEntity",
+        "mangledName": "$s18DwebPlatformIosKit11SoundEntityC",
+        "moduleName": "DwebPlatformIosKit",
+        "objc_name": "SoundEntity",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSManagedObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "CoreData.NSManagedObject",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectIdentifier",
+                    "printedName": "Swift.ObjectIdentifier",
+                    "usr": "s:SO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "DwebPlatformIosKit"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/DwebKeyChainGenericStore.swift",
+      "kind": "StringLiteral",
+      "offset": 54,
+      "length": 24,
+      "value": "\"DwebPlatformIosKit.DwebKeyChainGenericStore\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/EnvironmentModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 155,
+      "length": 3,
+      "value": "240"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/EnvironmentModel.swift",
+      "kind": "FloatLiteral",
+      "offset": 159,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/EnvironmentModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 173,
+      "length": 3,
+      "value": "240"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/EnvironmentModel.swift",
+      "kind": "FloatLiteral",
+      "offset": 177,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/EnvironmentModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 190,
+      "length": 3,
+      "value": "246"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/EnvironmentModel.swift",
+      "kind": "FloatLiteral",
+      "offset": 194,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/EnvironmentModel.swift",
+      "kind": "FloatLiteral",
+      "offset": 208,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/EnvironmentModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 237,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/EnvironmentModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 322,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/CustomSliderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 192,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/CustomSliderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 263,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/DwebWKWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 351,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordCellView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 324,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordCellView.swift",
+      "kind": "StringLiteral",
+      "offset": 376,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordCellView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 427,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordCellView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 476,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordCellView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 521,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordCellView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 566,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 221,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordView.swift",
+      "kind": "StringLiteral",
+      "offset": 349,
+      "length": 7,
+      "value": "\"00:00\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 394,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 445,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 558,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 601,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/DataController.swift",
+      "kind": "StringLiteral",
+      "offset": 411,
+      "length": 13,
+      "value": "\"RecordSound\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/DataController.swift",
+      "kind": "StringLiteral",
+      "offset": 441,
+      "length": 6,
+      "value": "\"momd\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/DataController.swift",
+      "kind": "StringLiteral",
+      "offset": 501,
+      "length": 20,
+      "value": "\"Failed to load URL\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/DataController.swift",
+      "kind": "StringLiteral",
+      "offset": 666,
+      "length": 25,
+      "value": "\"Failed to load objModel\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/DataController.swift",
+      "kind": "StringLiteral",
+      "offset": 764,
+      "length": 13,
+      "value": "\"RecordSound\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/DataController.swift",
+      "kind": "StringLiteral",
+      "offset": 930,
+      "length": 57,
+      "value": "\"Core Data failed to load: \""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/DataController.swift",
+      "kind": "StringLiteral",
+      "offset": 986,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/SingleRecordView.swift",
+      "kind": "StringLiteral",
+      "offset": 311,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/SingleRecordView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 355,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/SingleRecordView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 404,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/SingleRecordView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 451,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/SingleRecordView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 501,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/SingleRecordView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 553,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/SingleRecordView.swift",
+      "kind": "StringLiteral",
+      "offset": 685,
+      "length": 7,
+      "value": "\"00:00\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/SingleRecordView.swift",
+      "kind": "StringLiteral",
+      "offset": 737,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/SingleRecordView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 776,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/SingleRecordView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 831,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/SingleRecordView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 874,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/SingleRecordView.swift",
+      "kind": "Array",
+      "offset": 919,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/SingleRecordView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 961,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/SingleRecordView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1004,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/SingleRecordView.swift",
+      "kind": "StringLiteral",
+      "offset": 7698,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/PlayerManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 302,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/PlayerManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 329,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordManager.swift",
+      "kind": "Dictionary",
+      "offset": 406,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordManager.swift",
+      "kind": "StringLiteral",
+      "offset": 637,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 671,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 701,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/DwebHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1802,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/DwebHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1571,
+      "length": 17,
+      "value": "\"DwebPlatformIosKit.EasyURLSchemeTask\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/DwebHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 4975,
+      "length": 20,
+      "value": "\"DwebPlatformIosKit.SecureViewController\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordMainView.swift",
+      "kind": "StringLiteral",
+      "offset": 217,
+      "length": 11,
+      "value": "\"timeStamp\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordMainView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 241,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordMainView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 478,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordMainView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 521,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordMainView.swift",
+      "kind": "Array",
+      "offset": 571,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebPlatformIosKit\/DwebPlatformIosKit\/RecordSound\/RecordMainView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 618,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

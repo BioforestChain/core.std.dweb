@@ -9,4 +9,14 @@ dependencies:
     - $libs.squareup.okio
     - ../../../../deno/dweb_browser/toolkit/dweb_browser_libs/rust_library/mix_compression
 
+aliases:
+    - desktopAndAndroid: [jvm, android]
+
+dependencies@desktopAndAndroid:
+    - $libs.apache.common.compress
+
+dependencies@ios:
+    - $libs.squareup.okio
+
+
 

@@ -1,0 +1,48 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DwebBrowserCommon
+@_exported import DwebBrowserCommon
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class DwebOrderFunDump {
+  public static func dumpOrderFileIfNeed()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class DwebConfigInfo : ObjectiveC.NSObject {
+  @objc public static var isDebug: Swift.Bool {
+    @objc get
+  }
+  @objc public static var isRelease: Swift.Bool {
+    @objc get
+  }
+  @objc public static var isTesting: Swift.Bool {
+    @objc get
+  }
+  @objc public static var isUITesting: Swift.Bool {
+    @objc get
+  }
+  @objc public static var isNoneTesting: Swift.Bool {
+    @objc get
+  }
+  @objc public static var isOrderDump: Swift.Bool {
+    @objc get
+  }
+  @objc public static var orderOutputPath: Swift.String? {
+    @objc get
+  }
+  @objc public static var gitInfo: Swift.String? {
+    @objc get
+  }
+  @objc public static var info: [Swift.String : Swift.String]? {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+public var dateformate: Foundation.DateFormatter
+public func Log(time: Swift.String = dateformate.string(from: Date()), file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, category: Swift.String = "iOS", _ msg: Swift.String? = nil, separator: Swift.String = " ", terminator: Swift.String = "\n")
+public func LogRaw(_ msg: Swift.String? = nil, separator: Swift.String = " ", terminator: Swift.String = "\n")
+public func Log(time: Swift.String = dateformate.string(from: Date()), file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, category: Swift.String = "iOS", _ msg: () -> Swift.String?)

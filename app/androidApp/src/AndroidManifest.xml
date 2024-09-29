@@ -16,9 +16,7 @@
     <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />-->
-    <uses-permission
-        android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
-        tools:ignore="ProtectedPermissions"/> <!-- 前台服务开启权限 -->
+    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"/> <!-- 前台服务开启权限 -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/> <!-- 弹出横幅通知的权限 -->
     <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/> <!--webview select-->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/> <!-- 存储卡 -->

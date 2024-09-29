@@ -1,0 +1,7 @@
+
+
+dependencies:
+    - ./platformIos
+
+test-dependencies:
+    - ./platformTest

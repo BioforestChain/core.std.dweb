@@ -2,5 +2,18 @@ product:
     type: lib
     platforms: [iosArm64,iosSimulatorArm64,iosX64,android]
 
+aliases:
+    - skiko: [jvm,ios]
+    - mobile: [android,ios]
+
+apply:
+    - ../ios.module-template.yaml
+    - ../desktop.module-template.yaml
+
 dependencies:
-    
+    - ../helper
+    - ../helperPlatform
+
+dependencies@android:
+    - $libs.compose.material3
+

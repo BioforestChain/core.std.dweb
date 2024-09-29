@@ -1,0 +1,1079 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DwebBrowserCommon",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DwebOrderFunDump",
+        "printedName": "DwebOrderFunDump",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "dumpOrderFileIfNeed",
+            "printedName": "dumpOrderFileIfNeed()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DwebBrowserCommon0A12OrderFunDumpC04dumpD10FileIfNeedyyFZ",
+            "mangledName": "$s17DwebBrowserCommon0A12OrderFunDumpC04dumpD10FileIfNeedyyFZ",
+            "moduleName": "DwebBrowserCommon",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17DwebBrowserCommon0A12OrderFunDumpC",
+        "mangledName": "$s17DwebBrowserCommon0A12OrderFunDumpC",
+        "moduleName": "DwebBrowserCommon",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DwebBrowserCommon",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DwebConfigInfo",
+        "printedName": "DwebConfigInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isDebug",
+            "printedName": "isDebug",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DwebBrowserCommon@objc(cs)DwebConfigInfo(cpy)isDebug",
+            "mangledName": "$s17DwebBrowserCommon0A10ConfigInfoC7isDebugSbvpZ",
+            "moduleName": "DwebBrowserCommon",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DwebBrowserCommon@objc(cs)DwebConfigInfo(cm)isDebug",
+                "mangledName": "$s17DwebBrowserCommon0A10ConfigInfoC7isDebugSbvgZ",
+                "moduleName": "DwebBrowserCommon",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isRelease",
+            "printedName": "isRelease",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DwebBrowserCommon@objc(cs)DwebConfigInfo(cpy)isRelease",
+            "mangledName": "$s17DwebBrowserCommon0A10ConfigInfoC9isReleaseSbvpZ",
+            "moduleName": "DwebBrowserCommon",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DwebBrowserCommon@objc(cs)DwebConfigInfo(cm)isRelease",
+                "mangledName": "$s17DwebBrowserCommon0A10ConfigInfoC9isReleaseSbvgZ",
+                "moduleName": "DwebBrowserCommon",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isTesting",
+            "printedName": "isTesting",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DwebBrowserCommon@objc(cs)DwebConfigInfo(cpy)isTesting",
+            "mangledName": "$s17DwebBrowserCommon0A10ConfigInfoC9isTestingSbvpZ",
+            "moduleName": "DwebBrowserCommon",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DwebBrowserCommon@objc(cs)DwebConfigInfo(cm)isTesting",
+                "mangledName": "$s17DwebBrowserCommon0A10ConfigInfoC9isTestingSbvgZ",
+                "moduleName": "DwebBrowserCommon",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isUITesting",
+            "printedName": "isUITesting",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DwebBrowserCommon@objc(cs)DwebConfigInfo(cpy)isUITesting",
+            "mangledName": "$s17DwebBrowserCommon0A10ConfigInfoC11isUITestingSbvpZ",
+            "moduleName": "DwebBrowserCommon",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DwebBrowserCommon@objc(cs)DwebConfigInfo(cm)isUITesting",
+                "mangledName": "$s17DwebBrowserCommon0A10ConfigInfoC11isUITestingSbvgZ",
+                "moduleName": "DwebBrowserCommon",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isNoneTesting",
+            "printedName": "isNoneTesting",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DwebBrowserCommon@objc(cs)DwebConfigInfo(cpy)isNoneTesting",
+            "mangledName": "$s17DwebBrowserCommon0A10ConfigInfoC13isNoneTestingSbvpZ",
+            "moduleName": "DwebBrowserCommon",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DwebBrowserCommon@objc(cs)DwebConfigInfo(cm)isNoneTesting",
+                "mangledName": "$s17DwebBrowserCommon0A10ConfigInfoC13isNoneTestingSbvgZ",
+                "moduleName": "DwebBrowserCommon",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isOrderDump",
+            "printedName": "isOrderDump",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DwebBrowserCommon@objc(cs)DwebConfigInfo(cpy)isOrderDump",
+            "mangledName": "$s17DwebBrowserCommon0A10ConfigInfoC11isOrderDumpSbvpZ",
+            "moduleName": "DwebBrowserCommon",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DwebBrowserCommon@objc(cs)DwebConfigInfo(cm)isOrderDump",
+                "mangledName": "$s17DwebBrowserCommon0A10ConfigInfoC11isOrderDumpSbvgZ",
+                "moduleName": "DwebBrowserCommon",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "orderOutputPath",
+            "printedName": "orderOutputPath",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DwebBrowserCommon@objc(cs)DwebConfigInfo(cpy)orderOutputPath",
+            "mangledName": "$s17DwebBrowserCommon0A10ConfigInfoC15orderOutputPathSSSgvpZ",
+            "moduleName": "DwebBrowserCommon",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DwebBrowserCommon@objc(cs)DwebConfigInfo(cm)orderOutputPath",
+                "mangledName": "$s17DwebBrowserCommon0A10ConfigInfoC15orderOutputPathSSSgvgZ",
+                "moduleName": "DwebBrowserCommon",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "gitInfo",
+            "printedName": "gitInfo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DwebBrowserCommon@objc(cs)DwebConfigInfo(cpy)gitInfo",
+            "mangledName": "$s17DwebBrowserCommon0A10ConfigInfoC03gitE0SSSgvpZ",
+            "moduleName": "DwebBrowserCommon",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DwebBrowserCommon@objc(cs)DwebConfigInfo(cm)gitInfo",
+                "mangledName": "$s17DwebBrowserCommon0A10ConfigInfoC03gitE0SSSgvgZ",
+                "moduleName": "DwebBrowserCommon",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "info",
+            "printedName": "info",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DwebBrowserCommon@objc(cs)DwebConfigInfo(cpy)info",
+            "mangledName": "$s17DwebBrowserCommon0A10ConfigInfoC4infoSDyS2SGSgvpZ",
+            "moduleName": "DwebBrowserCommon",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DwebBrowserCommon@objc(cs)DwebConfigInfo(cm)info",
+                "mangledName": "$s17DwebBrowserCommon0A10ConfigInfoC4infoSDyS2SGSgvgZ",
+                "moduleName": "DwebBrowserCommon",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DwebConfigInfo",
+                "printedName": "DwebBrowserCommon.DwebConfigInfo",
+                "usr": "c:@M@DwebBrowserCommon@objc(cs)DwebConfigInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@DwebBrowserCommon@objc(cs)DwebConfigInfo(im)init",
+            "mangledName": "$s17DwebBrowserCommon0A10ConfigInfoCACycfc",
+            "moduleName": "DwebBrowserCommon",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@DwebBrowserCommon@objc(cs)DwebConfigInfo",
+        "mangledName": "$s17DwebBrowserCommon0A10ConfigInfoC",
+        "moduleName": "DwebBrowserCommon",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DwebBrowserCommon",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "dateformate",
+        "printedName": "dateformate",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "DateFormatter",
+            "printedName": "Foundation.DateFormatter",
+            "usr": "c:objc(cs)NSDateFormatter"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:17DwebBrowserCommon11dateformateSo15NSDateFormatterCvp",
+        "mangledName": "$s17DwebBrowserCommon11dateformateSo15NSDateFormatterCvp",
+        "moduleName": "DwebBrowserCommon",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DateFormatter",
+                "printedName": "Foundation.DateFormatter",
+                "usr": "c:objc(cs)NSDateFormatter"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:17DwebBrowserCommon11dateformateSo15NSDateFormatterCvg",
+            "mangledName": "$s17DwebBrowserCommon11dateformateSo15NSDateFormatterCvg",
+            "moduleName": "DwebBrowserCommon",
+            "implicit": true,
+            "accessorKind": "get"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Set",
+            "printedName": "Set()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DateFormatter",
+                "printedName": "Foundation.DateFormatter",
+                "usr": "c:objc(cs)NSDateFormatter"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:17DwebBrowserCommon11dateformateSo15NSDateFormatterCvs",
+            "mangledName": "$s17DwebBrowserCommon11dateformateSo15NSDateFormatterCvs",
+            "moduleName": "DwebBrowserCommon",
+            "implicit": true,
+            "accessorKind": "set"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Modify",
+            "printedName": "Modify()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:17DwebBrowserCommon11dateformateSo15NSDateFormatterCvM",
+            "mangledName": "$s17DwebBrowserCommon11dateformateSo15NSDateFormatterCvM",
+            "moduleName": "DwebBrowserCommon",
+            "implicit": true,
+            "accessorKind": "_modify"
+          }
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "Log",
+        "printedName": "Log(time:file:function:line:category:_:separator:terminator:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "hasDefaultArg": true,
+            "usr": "s:Si"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.String?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "hasDefaultArg": true,
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:17DwebBrowserCommon3Log4time4file8function4line8category_9separator10terminatorySS_S2SSiS2SSgS2StF",
+        "mangledName": "$s17DwebBrowserCommon3Log4time4file8function4line8category_9separator10terminatorySS_S2SSiS2SSgS2StF",
+        "moduleName": "DwebBrowserCommon",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "LogRaw",
+        "printedName": "LogRaw(_:separator:terminator:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.String?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "hasDefaultArg": true,
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:17DwebBrowserCommon6LogRaw_9separator10terminatorySSSg_S2StF",
+        "mangledName": "$s17DwebBrowserCommon6LogRaw_9separator10terminatorySSSg_S2StF",
+        "moduleName": "DwebBrowserCommon",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "Log",
+        "printedName": "Log(time:file:function:line:category:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "hasDefaultArg": true,
+            "usr": "s:Si"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "() -> Swift.String?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "typeAttributes": [
+              "noescape"
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:17DwebBrowserCommon3Log4time4file8function4line8category_ySS_S2SSiS2SSgyXEtF",
+        "mangledName": "$s17DwebBrowserCommon3Log4time4file8function4line8category_ySS_S2SSiS2SSgyXEtF",
+        "moduleName": "DwebBrowserCommon",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebBrowserCommon\/DwebBrowserCommon\/DwebConfigInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 450,
+      "length": 6,
+      "value": "\"Mode\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebBrowserCommon\/DwebBrowserCommon\/DwebConfigInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 500,
+      "length": 7,
+      "value": "\"Order\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebBrowserCommon\/DwebBrowserCommon\/DwebConfigInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 540,
+      "length": 5,
+      "value": "\"Git\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebBrowserCommon\/DwebBrowserCommon\/DwebConfigInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 593,
+      "length": 13,
+      "value": "\"DwebTesting\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebBrowserCommon\/DwebBrowserCommon\/DwebConfigInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 650,
+      "length": 15,
+      "value": "\"DwebUITesting\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebBrowserCommon\/DwebBrowserCommon\/DwebConfigInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 709,
+      "length": 18,
+      "value": "\"DwebOrderDumping\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebBrowserCommon\/DwebBrowserCommon\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 212,
+      "length": 15,
+      "value": "\"HH:mm:ss.SSSS\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebBrowserCommon\/DwebBrowserCommon\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 473,
+      "length": 5,
+      "value": "\"iOS\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebBrowserCommon\/DwebBrowserCommon\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 554,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebBrowserCommon\/DwebBrowserCommon\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 596,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebBrowserCommon\/DwebBrowserCommon\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 896,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebBrowserCommon\/DwebBrowserCommon\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 941,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Volumes\/developer\/waterbang\/deno\/dweb_browser\/next\/kmp\/app\/iosApp\/DwebBrowserCommon\/DwebBrowserCommon\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 1282,
+      "length": 5,
+      "value": "\"iOS\""
+    }
+  ]
+}

@@ -1,8 +1,16 @@
+dependencies:
+    - $libs.kotlinx.coroutines.core
+    - $libs.kotlinx.atomicfu
+    - $libs.kotlinx.io
+    - $libs.kotlin.serialization.json
+    - $libs.kotlin.serialization.cbor
+
+
+test-dependencies:
+    - $libs.test.kotlin.coroutines.test
+    - $libs.test.kotlin.coroutines.debug
+
 settings:
-    android:
-        minSdk: 24
-        targetSdk: 34
-        compileSdk: 34
-#    jvm:
-#        release: 11
+    kotlin:
+        languageVersion: 2.0
     compose: enabled
