@@ -3,7 +3,6 @@ product:
     platforms: [iosArm64,iosSimulatorArm64,iosX64,android,jvm]
 
 aliases:
-    - desktop: [jvm]
     - mobile: [ios,android]
 
 dependencies@mobile:
