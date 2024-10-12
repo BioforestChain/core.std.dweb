@@ -7,7 +7,7 @@ dependencies:
     - $libs.ktor.http
     - $libs.ktor.io
     - $libs.squareup.okio
-    - ../../../../deno/dweb_browser/toolkit/dweb_browser_libs/rust_library/mix_compression
+    - $libs.dweb.rust.libs.compression
 
 aliases:
     - desktopAndAndroid: [jvm, android]

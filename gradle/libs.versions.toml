@@ -2,6 +2,11 @@
 agp = "8.5.0"
 kotlin = "2.0.0"
 
+dweb-version = "1.0.0"
+
+jetbrains-compose-version = "1.7.0-rc01"
+jetbrains-androidx-navigation-version = "2.8.0-alpha10"
+jetbrains-compose-material3-adaptive-version = "1.0.0-alpha03"
 compose = "1.5.4"
 compose-material3 = "1.1.2"
 androidx-activityCompose = "1.8.0"
@@ -16,8 +21,17 @@ kotlinx-io-version = "0.5.3"
 kotlinx-html-version = "0.11.0"
 kotlinx-serialization = "1.7.1"
 
+androidx-activity = "1.9.2"
+androidx-appcompat = "1.7.0"
 androidx-core-ktx = "1.13.1"
 androidx-annotation = "1.8.2"
+androidx-lifecycle = "2.8.6"
+androidx-core-splashscreen = "1.1.0-rc01"
+androidx-navigation-ui-kotlin = "2.8.1"
+androidx-gridlayout = "1.0.0"
+androidx-profile-installer = "1.4.1"
+androidx-biometric = "1.2.0-alpha05"
+animation-core-android = "1.7.3"
 
 cryptography-version = "0.3.0"
 
@@ -26,7 +40,6 @@ camera-version = "1.4.0-rc02"
 camera-barcode = "17.3.0"
 camera-zxing = "3.5.3"
 commons-compress = "1.26.1"
-androidx-biometric = "1.2.0-alpha05"
 
 accompanist = "0.34.0"
 google-material = "1.12.0"
@@ -40,9 +53,31 @@ androidx-compose-ui-test = "1.7.2"
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 
+#dweb
+dweb-rust-libs-compression = { module = "io.github.bioforestchain:lib_mix_compression", version.ref = "dweb-version" }
+dweb-rust-reverse-proxy = { module = "io.github.bioforestchain:lib_reverse_proxy", version.ref = "dweb-version" }
+dweb-rust-multipart = { module = "io.github.bioforestchain:lib_multipart", version.ref = "dweb-version" }
+
+
 
 #Compose
-androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+jetbrains-compose-components-resources = { module = "org.jetbrains.compose.components:components-resources", version.ref = "jetbrains-compose-version" }
+jetbrains-compose-runtime = { module = "org.jetbrains.compose.runtime:runtime", version.ref = "jetbrains-compose-version" }
+jetbrains-compose-foundation = { module = "org.jetbrains.compose.foundation:foundation", version.ref = "jetbrains-compose-version" }
+jetbrains-compose-preview = { module = "org.jetbrains.compose.ui:ui-tooling-preview", version.ref = "jetbrains-compose-version" }
+jetbrains-compose-material = { module = "org.jetbrains.compose.material:material", version.ref = "jetbrains-compose-version" }
+jetbrains-compose-material3 = { module = "org.jetbrains.compose.material3:material3", version.ref = "jetbrains-compose-version" }
+jetbrains-compose-material3-window-size = { module = "org.jetbrains.compose.material3:material3-window-size-class", version.ref = "jetbrains-compose-version" }
+jetbrains-compose-materialIcons = { module = "org.jetbrains.compose.material:material-icons-extended", version.ref = "jetbrains-compose-version" }
+jetbrains-compose-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "jetbrains-compose-version" }
+jetbrains-compose-ui-tooling = { module = "org.jetbrains.compose.ui:ui-tooling", version.ref = "jetbrains-compose-version" }
+jetbrains-compose-ui-tooling-preview-desktop = { module = "org.jetbrains.compose.ui:ui-tooling-preview-desktop", version.ref = "jetbrains-compose-version" }
+jetbrains-compose-ui-test-junit4 = { module = "org.jetbrains.compose.ui:ui-test-junit4", version.ref = "jetbrains-compose-version" }
+jetbrains-androidx-navigation = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "jetbrains-androidx-navigation-version" }
+jetbrains-compose-material3-adaptive = { module = "org.jetbrains.compose.material3.adaptive:adaptive", version.ref = "jetbrains-compose-material3-adaptive-version" }
+jetbrains-compose-material3-adaptive-layout = { module = "org.jetbrains.compose.material3.adaptive:adaptive-layout", version.ref = "jetbrains-compose-material3-adaptive-version" }
+jetbrains-compose-material3-adaptive-navigation = { module = "org.jetbrains.compose.material3.adaptive:adaptive-navigation", version.ref = "jetbrains-compose-material3-adaptive-version" }
+
 compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
 compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
 compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
@@ -83,8 +118,20 @@ whyoleg-cryptography-provider-openssl3-prebuilt = { group = "dev.whyoleg.cryptog
 
 
 #androidx
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidx-lifecycle" }
+
 androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "androidx-annotation" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-core-ktx" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "androidx-activity" }
+androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "androidx-activity" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidx-activity" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidx-appcompat" }
+androidx-appcompat-resources = { group = "androidx.appcompat", name = "appcompat-resources", version.ref = "androidx-appcompat" }
+androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "androidx-core-splashscreen" }
+androidx-navigation-ui-kotlin = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "androidx-navigation-ui-kotlin" }
+androidx-gridlayout = { group = "androidx.gridlayout", name = "gridlayout", version.ref = "androidx-gridlayout" }
+androidx-profile-installer = { group = "androidx.profileinstaller", name = "profileinstaller", version.ref = "androidx-profile-installer" }
+androidx-animation-core-android = { group = "androidx.compose.animation", name = "animation-core-android", version.ref = "animation-core-android" }
 
 #okio
 squareup-okio = { group = "com.squareup.okio", name = "okio", version.ref = "okio-version" }

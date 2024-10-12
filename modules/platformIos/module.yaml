@@ -3,7 +3,7 @@ product:
     platforms: [iosArm64,iosSimulatorArm64,iosX64]
 
 
-module:
-    layout: gradle-kmp
+#module:
+#    layout: gradle-kmp
 
 

@@ -1,15 +1,23 @@
 
 dependencies:
-    - $libs.androidx.core.ktx
-    - $libs.androidx.annotation
+#    - $libs.androidx.core.ktx
+#    - $libs.androidx.annotation
+    # AndroidX
+    - $libs.androidx.activity
+    - $libs.androidx.activity.ktx
+    - $libs.androidx.appcompat
+    - $libs.androidx.animation.core.android
+    - $libs.androidx.lifecycle.runtime.ktx
+    - $libs.androidx.activity.compose
+    # Test
+    - $libs.compose.ui.tooling
+    - $libs.compose.ui.tooling.preview
 
 settings:
     compose: enabled
     android:
-        namespace: com.dweb.subsoil.android
-        applicationId: com.dweb.subsoil.android
-        minSdk: 24
+        namespace: dweb.subsoil.android
+        applicationId: dweb.subsoil.android
+        minSdk: 28
         targetSdk: 34
         compileSdk: 34
-    jvm:
-        release: 17

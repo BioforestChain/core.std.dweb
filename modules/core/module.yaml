@@ -5,8 +5,13 @@ product:
 aliases:
     - mobile: [ios,android]
 
+apply:
+    - ../android.module-template.yaml
+    - ../common.module-template.yaml
+    - ../desktop.module-template.yaml
+
 dependencies@mobile:
-    - ../../../../deno/dweb_browser/toolkit/dweb_browser_libs/rust_library/reverse_proxy
+    -  $libs.dweb.rust.reverse.proxy
 
 
 dependencies:
@@ -16,9 +21,6 @@ dependencies:
     - ../pureIO
     - ../pureCrypto
     - ../pureHttp
-    - ../../../../deno/dweb_browser/toolkit/dweb_browser_libs/rust_library/multipart
+    - $libs.dweb.rust.multipart
 
-apply:
-    - ../android.module-template.yaml
-    - ../common.module-template.yaml
-    - ../desktop.module-template.yaml
+

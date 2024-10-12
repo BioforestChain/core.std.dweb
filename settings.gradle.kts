@@ -2,8 +2,9 @@ enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 pluginManagement {
     repositories {
         google()
-        gradlePluginPortal()
         mavenCentral()
+        gradlePluginPortal()
+        mavenLocal()
         /// 添加 amper 依赖
         maven("https://packages.jetbrains.team/maven/p/amper/amper")
         maven("https://www.jetbrains.com/intellij-repository/releases")

@@ -2,6 +2,12 @@ product:
     type: lib
     platforms: [iosArm64,iosSimulatorArm64,iosX64,android,jvm]
 
+
+aliases:
+  - desktop: [jvm]
+  - ktor: [ios,android,jvm]
+  - mobile: [ios,android]
+
 apply:
     - ../common.module-template.yaml
 
@@ -10,11 +16,14 @@ dependencies:
     - $libs.ktor.io
     - $libs.ktor.http
     - $libs.ktor.client.encoding
-    - $libs.ktor.server.host.common
-    - $libs.ktor.server.core
-    - $libs.ktor.server.websockets
     - ../helper
     - ../helperPlatform
+
+
+dependencies@ktor:
+  - $libs.ktor.server.core
+  - $libs.ktor.server.host.common
+  - $libs.ktor.server.websockets
 
 dependencies@android:
     - $libs.ktor.server.cio
@@ -24,7 +33,7 @@ dependencies@ios:
     - $libs.ktor.server.cio
     - $libs.ktor.client.darwin
 
-dependencies@jvm:
+dependencies@desktop:
     - $libs.ktor.client.okhttp
     - $libs.ktor.server.netty
     - $libs.ktor.server.jetty
